@@ -40,6 +40,7 @@ function conection(status) {
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
+  
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
