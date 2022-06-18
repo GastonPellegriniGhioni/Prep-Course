@@ -10,6 +10,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var arrayNuevo = [];
+
+  for (var clave in objeto) {
+    arrayNuevo.push([clave, objeto[clave]]);
+  } return arrayNuevo;
 }
 
 
@@ -18,6 +23,15 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+    var obj = {};
+    for (let i = 0; i < string.length; i++) {
+      (Objects.hasOwnProperty(string[i])){
+        objeto[string[i]] = objeoto[string[i]] + 1;
+      } else {
+        objeto[string[i]] = 1;
+      }
+    }
+    return objeto;
 }
 
 
@@ -43,7 +57,10 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-}
+  numero = numero.toString()
+  return numero.split("").reverse().join("") === numero
+} console.log(capicua(numero))
+
 
 
 function deleteAbc(cadena){
